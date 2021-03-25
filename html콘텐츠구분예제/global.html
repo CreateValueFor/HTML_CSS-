@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLobal</title>
+    <style>
+        .section{
+            width:100px;
+            color:red;
+            background : blue;
+        }
+        #section{
+            height:200px;
+            position:relative;
+        }
+    </style>
+</head>
+<body>
+    Hello&nbsp; world
+    <h1>
+        &lt;div&gt;&lt;/div&gt;
+    </h1>
+    <input type="text" value="1" tabindex="2">
+    <input type="text" value="2" tabindex="4">
+    <input type="text" value="3" tabindex="1">
+    <input type="text" value="4" tabindex="3">
+    <input type="text" value="5" tabindex="5">
+    <div draggable="true">The element to drag.</div>
+    <div id ="me" data-my-name="이민기" data-my-age = "23">이민기</div>
+    <script>
+        const me = document.getElementById('me');
+        console.log(me.dataset.myName);
+        console.log(me.dataset.myAge);
+    </script>
+    <h1 style = "color: red; background: blue;"></h1>
+    <p></p>
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+    <div id="section"></div>
+    <script>
+        const section = document.querySelector('.section');
+        const sectionId = document.getElementById('section');
+    </script>
+</body>
+</html>

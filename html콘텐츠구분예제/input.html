@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/input.css">
+</head>
+
+<body>
+    <form action="/login" method="GET">
+    
+        <label for="">
+            검색 
+        </label>
+        <fieldset>
+            <input type="radio" name="radio1">
+            <input type="radio" name="radio1" checked>
+            <input type="radio" name="radio1">
+        </fieldset>
+        <label><input type="radio" name="radio1">동의하십니까?</label>
+        <!-- <input type="image" src="images/jin_karaoke.jpg" alt="jin"> -->
+        <input type="file" multiple>
+        <input type="checkbox" checked>
+        <input type="number" value="1234" disabled>
+        <input type="number" step="4" max="8" min="4">
+        <input type="email" name="id">
+        <input type="password" name="pw">
+        <input type="submit" value="로그인">
+        <input type="number" placeholder="숫자를 입력하세요!">
+        <input type="reset" value="초기화">
+        <button type="submit">초기화</button>
+        <button onclick="doit()"" type="button">클릭하세요!</button>
+
+        <script>
+            function doit() {
+                alert("클릭했습니다!");
+            }
+        </script>
+    <textarea name="" id="" cols="30" rows="10" placeholder="설명을 입력하세요"></textarea>
+    </form>
+    <input type="text">
+
+</body>
+
+</html>

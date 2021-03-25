@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background: white;
+    border-bottom: 1px solid lightgray;
+}
+
+.container{
+    /* background : tomato; */
+    width: 980px;
+    margin : auto;
+    /* padding : 20px 0; */
+    /* margin: auto가 화면 중앙에 두게 하는 코드 */
+}
+.container-left{
+    /* 패딩은 효과를 볼 수 있는 가장 근접 요소에 있는것이 더 좋다. */
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.logo {
+    float:left;
+    margin-right:5px;
+}
+/* 유지보수를 위해 html태그와 유사하게 작성하기 */
+.logo img {
+    display:block;
+}
+.menu{
+    float:left;
+}
+.menu-item{
+    float: left;/*특정 요소들ㅇ르 수평으로 잡을 수 있다.*/
+    /* margin-right: 10px; */
+    padding: 8px 10px;
+
+}   
+.clearfix::after{
+    /*콜론 두개 있는건 가상 요소 선택자*/
+    content: "";
+    display:block;
+    clear:both;
+}

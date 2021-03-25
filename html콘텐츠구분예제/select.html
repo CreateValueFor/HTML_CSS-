@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+    <link rel="stylesheet" href="/css/select.css">
+</head>
+<body>
+    <select name="fruits" id="" size = "1" multiple>
+        <optgroup label="내가 좋아하는 과일">
+            <option label = "Apple"value="Apple"></option>
+            <option value="">banana</option>
+            <option value="">strawberry</option>
+        </optgroup>
+        <optgroup label = "내가 싫어하는 과일">
+            <option selected value="">mango</option>
+            <option value="">lime</option>
+        </optgroup>
+    </select>
+    <input type="text" list="fruits">
+    <datalist id="fruits">
+        <option>Apple</option>
+        <option>Banana</option>
+        <option>Orange</option>
+        <option>Mango</option>
+        <option>Fineapple</option>
+    </datalist>
+    <progress value="0" max="100">70%</progress>
+    <script>
+        const progress = document.querySelector("progress");
+        const interval = setInterval(function *(){
+            progress.value += 10;
+            if (progress.value >= 100) clearInterval(interval);
+        }, 1000)
+    </script>
+</body>
+</html>

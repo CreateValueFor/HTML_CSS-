@@ -1,0 +1,35 @@
+hr {
+    border: none;
+    border-top : 2px dashed red;
+}
+
+em{
+    font-style : normal;
+    font-weight : bold;
+    color: lime;
+}
+u{
+    color:blue;
+}
+span{
+    text-decoration : underline;
+}
+.bold{
+    color:blue;
+}
+code{
+    color:aliceblue;
+    background: lightgray;
+    padding : 3px;
+}
+kbd{
+    padding: 0 3px;
+    border-radius : 3px;
+    border-top : 2px solid rgb(240,240,240);
+    border-bottom : 2px solid rgb(200,240,240);
+    border-left : 2px solid rgb(240,200,240);
+    border-right : 2px solid rgb(240,240,200);
+}
+p{
+    line-height: 50px;
+}
